@@ -8,16 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-name: Docker CI
 
-on:
-  push:
-    branches:
-      - main
-jobs:
-  build:
-    runs-on: ubuntu-latest
-steps:
+    steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
@@ -26,3 +18,4 @@ steps:
 
       - name: Run Docker container
         run: docker run first-project-app
+
