@@ -1,7 +1,7 @@
 FROM ubuntu:24.04
 WORKDIR /app
 COPY . .
-CMD ["catt", "app.txt"]
+CMD ["cat", "app.txt"]
 
 
 
